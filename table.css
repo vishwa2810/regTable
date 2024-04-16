@@ -1,0 +1,69 @@
+table {
+    border-collapse: collapse;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+    object-fit: contain;
+  
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    
+  }
+
+  th, td {
+    border: 1px solid rgb(20, 28, 60);
+    padding: 8px;
+    text-align: center;
+  }
+  #thead{
+    background-color: rgb(38, 9, 99);
+  }
+  #hs{
+    color: azure;
+    background-color: rgb(9, 9, 88);
+  }
+  h1{
+    text-align:center;
+    padding: 30px;
+    color:rgb(9, 9, 88);   
+  }
+  a{
+    background-color: aliceblue;
+    margin: top;
+  
+  }
+  #aboder{
+
+    background-color:rgb(9, 9, 88);
+    height: 80px;
+    align-content: flex-end;
+    padding: 20px;
+  }
+  .modal-body .intag{
+    display: flex;
+    flex-direction: row;
+  }
+  #valt{
+    margin-left: 10px;
+    text-align: center;
+    height: 30px;
+    border-color:rgb(9, 9, 88) ;
+    border-radius: 5%;
+  }
+  .modal-header{
+    color: azure;
+    background-color:rgb(9, 9, 88) ;
+  }
+  .intag h6{
+    color:rgb(9, 9, 88) ;
+  }
+  
+  @media screen and (max-width: 550px){
+     .main{
+      width: max-content;
+     }
+  }
