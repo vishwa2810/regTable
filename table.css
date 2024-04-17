@@ -3,7 +3,6 @@ table {
     justify-content: center;
     margin-top: 40px;
     text-align: center;
-    object-fit: contain;
   
   }
   .main{
@@ -12,6 +11,16 @@ table {
     height: 100vh;
     width: 100vw;
     
+    
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0px;
   }
 
   th, td {
@@ -61,9 +70,42 @@ table {
   .intag h6{
     color:rgb(9, 9, 88) ;
   }
-  
-  @media screen and (max-width: 550px){
-     .main{
-      width: max-content;
-     }
+ 
+
+/* 
+  .main {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  } */
+
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+    table thead {
+      display: none;
+    }
+    table tbody td {
+      display: block;
+      text-align:center; /* Adjust as needed */
+    }
+    table tbody td:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+    }
   }
