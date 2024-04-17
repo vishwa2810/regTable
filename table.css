@@ -5,14 +5,18 @@ table {
     text-align: center;
   
   }
-  .main{
+
+  .main {
+    overflow-x: auto;
+  }
+  /* .main{
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
     
     
-  }
+  } */
   .container{
     display: flex;
     flex-direction: column;
@@ -71,11 +75,9 @@ table {
     color:rgb(9, 9, 88) ;
   }
  
-
+  
 /* 
-  .main {
-    overflow-x: auto;
-  }
+  
 
   table {
     width: 100%;
@@ -95,9 +97,13 @@ table {
   @media screen and (max-width: 600px) {
     table {
       border: 0;
+      margin: 0px ;
     }
     table thead {
       display: none;
+    }
+    table tbody tr{
+      border: 1px solid blue;
     }
     table tbody td {
       display: block;
