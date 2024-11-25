@@ -11,7 +11,6 @@ form.addEventListener('submit', (e) => {
 });
 
 function validateInput() {
-   // let form = document.querySelector('#login_form');
     let name = document.querySelector('#name');
     let age = document.querySelector('#age');
     let gender = document.querySelector('#gender');
